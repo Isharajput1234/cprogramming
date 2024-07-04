@@ -1,0 +1,34 @@
+//not  executed
+#include<stdio.h>
+typedef struct employee
+{
+    char nm[40];
+    int salary;
+    char desg[40];
+}emp;
+int main()
+{
+    emp e[40],t;
+    int i,j;
+    printf("input name salary desgination of %d",i+1);
+    for(i=0;i<3;i++)
+    {
+        scanf("%s%d%s",e[i].nm,&e[i].salary,e[i].desg);
+    }
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3-i-1;j++);
+        {
+        if(e[j].salary>e[j+1].salary)
+        {
+            t=e[j];
+            e[j]=e[j+1];
+            e[j+1]=t;
+      }
+
+    }
+    }
+    for(i=0;i<3;i++)
+    printf("%s%d%s",e[i].nm,&e[i].salary,e[i].desg);
+    return 0;
+}

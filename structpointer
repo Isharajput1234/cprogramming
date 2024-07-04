@@ -1,0 +1,27 @@
+//using pointer
+#include<stdio.h>
+typedef struct student
+{
+    int marks;
+    int roll;
+    char nm[20];
+}str;
+int main()
+{
+    str s[20],*p;
+    p=s;
+    int i;
+    printf("input name,marks and roll");
+    for(i=0;i<3;i++)
+    {
+        scanf("%s%d%d",(p+i)->nm,&(p+i)->marks,&(p+i)->roll);
+    }
+    for(i=0;i<3;i++)
+    {
+        if((p+i)->marks>70)
+        {
+         printf("%d\n%d\n",(p+i)->roll,(p+i)->marks);
+        }
+    }
+    return 0;
+}

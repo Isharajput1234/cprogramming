@@ -1,0 +1,28 @@
+#include<stdio.h>
+struct date{
+    int dd,mm,yy;
+};
+typedef struct employee
+{
+    char nm[20];
+    int salary;
+    struct date doj;
+}emp;
+int main()
+{
+    emp e1,e2;
+    int i;
+        printf("input employee1 name,salary,dd,mm,yy");
+        scanf("%s%d%d%d%d",e1.nm,&e1.salary,&e1.doj.dd,&e1.doj.mm,&e1.doj.yy);
+        printf("input employee2 name,salary,dd,mm,yy");
+        scanf("%s%d%d%d%d",e2.nm,&e2.salary,&e2.doj.dd,&e2.doj.mm,&e2.doj.yy);
+        if(e1.doj.dd==e2.doj.dd && e1.doj.mm==e2.doj.mm && e1.doj.yy==e1.doj.yy)
+    {
+        printf("same same");
+    }
+    else
+    {
+    printf("not same");
+    }
+    return 0;
+}

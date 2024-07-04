@@ -1,0 +1,27 @@
+//how to check loan status
+#include<stdio.h>
+struct customer
+{
+    char nm[40];
+    int custid;
+    float bal;
+    char ls;
+};
+int main()
+{
+    struct customer c[10];
+    int i;
+    for(i=0;i<10;i++)
+    {
+        printf("Input name,customerid,balance,loanstatus(Y/N)");
+        scanf("%s%d%f%s",c[i].nm,&c[i].custid,&c[i].bal,&c[i].ls);
+    }
+    for(i=0;i<10;i++)
+    {
+      if(c[i].bal>500000 && c[i].ls=='Y')
+      {
+        printf("%s%d",c[i].nm,&c[i].custid);
+      }  
+    }
+    return 0;
+}
