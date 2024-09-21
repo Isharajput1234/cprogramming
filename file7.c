@@ -1,4 +1,4 @@
-//pta nhi
+//error
 #include<stdio.h>
 #include<string.h>
 int main()

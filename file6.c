@@ -1,4 +1,4 @@
-//not run
+//error
 #include<stdio.h>
 int main()
 {

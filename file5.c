@@ -1,4 +1,4 @@
-//pura glt hai bhai
+//error
 #include<stdio.h>
 int main()
 {
